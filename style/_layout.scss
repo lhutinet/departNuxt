@@ -1,0 +1,13 @@
+@use './settings' as *;
+
+
+.container {
+    width: min(1200px, 90%);
+    margin-inline: auto;
+    padding: $spacing-unit;
+}
+
+.grid {
+    display: grid;
+    gap: $spacing-unit;
+}

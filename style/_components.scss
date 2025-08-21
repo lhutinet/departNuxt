@@ -1,0 +1,13 @@
+@use 'settings' as *;
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background: $color-primary;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+
+
+}
