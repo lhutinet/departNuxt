@@ -5,6 +5,10 @@ body {
     font-size: $font-size-base;
     color: $color-dark;
     background: $color-light;
+
+
+    background: var(--color-bg);
+    color: var(--color-text);
 }
 
 h1,

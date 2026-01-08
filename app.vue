@@ -6,3 +6,11 @@
 
   </div>
 </template>
+
+<script setup lang="ts">
+const { theme, setTheme } = useTheme()
+
+onMounted(() => {
+  setTheme(theme.value)
+})
+</script>

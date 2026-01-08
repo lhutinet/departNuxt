@@ -15,3 +15,13 @@ $spacing-unit: 1rem;
 $bp-small: 480px;
 $bp-medium: 768px;
 $bp-large: 1024px;
+
+:root {
+    --color-bg: #ffffff;
+    --color-text: #222;
+}
+
+[data-theme="dark"] {
+    --color-bg: #121212;
+    --color-text: #f5f5f5;
+}
