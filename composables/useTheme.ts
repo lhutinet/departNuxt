@@ -4,10 +4,24 @@ export const useTheme = () => {
 
   const setTheme = (value: 'light' | 'dark') => {
     theme.value = value
+
     if (process.client) {
       document.documentElement.setAttribute('data-theme', value)
+      localStorage.setItem('theme', value)
     }
   }
 
-  return { theme, setTheme }
+  const initTheme = () => {
+    if (!process.client) return
+
+    const saved = localStorage.getItem('theme')
+    if (saved === 'light' || saved === 'dark') {
+      setTheme(saved)
+    } else {
+      setTheme(theme.value)
+    }
+  }
+
+  return { theme, setTheme, initTheme }
 }
+

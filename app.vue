@@ -8,9 +8,9 @@
 </template>
 
 <script setup lang="ts">
-const { theme, setTheme } = useTheme()
+const { initTheme } = useTheme()
 
 onMounted(() => {
-  setTheme(theme.value)
+  initTheme()
 })
 </script>
